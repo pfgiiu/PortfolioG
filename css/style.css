@@ -1,0 +1,169 @@
+/* Reset de estilos */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #6e0d8a;
+    color: #ff6ec7;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Adicionando uma fonte de estilo de jogos */
+}
+
+/* Estilo para o título */
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Transformando o texto do título em maiúsculas */
+}
+
+/* Estilo para a navegação */
+nav {
+    margin-top: 20px; /* Adicionando um espaçamento superior */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block; /* Exibindo as opções de navegação lado a lado */
+    margin-right: 20px; /* Adicionando um espaçamento entre as opções de navegação */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Removendo o espaçamento à direita da última opção de navegação */
+}
+
+nav ul li a {
+    color: #ff6ec7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase; /* Transformando o texto dos links em maiúsculas */
+    transition: color 0.3s ease; /* Adicionando uma transição suave para a cor do texto */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Mudando a cor do texto ao passar o mouse sobre os links */
+}
+
+/* Estilo para a seção "Sobre Mim" */
+.about-me {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.about-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #6e0d8a; /* Cor de destaque para o título */
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para a caixa de músicas favoritas */
+.music-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-left: 20px; /* Adicionando um espaçamento à esquerda para separar do conteúdo "Sobre Mim" */
+}
+
+.music-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #6e0d8a; /* Cor de destaque para o título */
+}
+
+/* Estilo para a lista de músicas */
+#music-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Estilo para a lista de músicas (mantendo o estilo previamente definido) */
+.music-list ul {
+    list-style: none;
+}
+
+.music-list li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.music-list li.selected {
+    color: #6e0d8a;
+    font-weight: bold;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #6e0d8a;
+    color: #ff6ec7;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a seção de música favorita */
+.music-list {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 200px; /* Definindo uma altura máxima para ativar a barra de rolagem */
+    overflow-y: auto; /* Adicionando uma barra de rolagem vertical quando necessário */
+}
+
+.music-list h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.music-list ul {
+    list-style: none;
+}
+
+.music-list li {
+    margin-bottom: 5px;
+    cursor: pointer; /* Alterando o cursor ao passar sobre as músicas */
+}
+
+/* Estilo para destacar a música selecionada */
+.music-list li.selected {
+    color: #6e0d8a; /* Mudando a cor do texto da música selecionada */
+    font-weight: bold; /* Tornando o texto da música selecionada em negrito */
+}
